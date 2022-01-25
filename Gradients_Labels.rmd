@@ -1,0 +1,147 @@
+---
+title: "Gradients_Labels"
+author: "Micah Sharer & Kaysee Arrowsmith"
+date: "10/16/2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+```
+
+## Load Functions
+
+Functions written by Micah Sharer
+
+```{r functions}
+bottom.labels <- function(df){
+    rbind(
+      cl<-10,
+      l<-matrix(nrow=(ceiling(length(df[,1])/cl))*4,ncol=cl,byrow=FALSE,dimnames=NULL),
+      k<-1,
+      for (j in ((c(1:(length(l[,1])/4))*4)-3)){
+        for (i in c(1:cl)) {
+          l[j,i] <- paste (df[k,5],df[k,3],df[k,4],df[k,11]) #site, (Transect Segment), plant
+          l[j+1,i] <- paste (df[k,6],"N",",",df[k,7],"W","Elev:",df[k,10],"m") #coordinates, elevation
+          l[j+2,i] <- paste ("RMBL","Gothic, CO USA") #RMBL, County Info
+          l[j+3,i] <- paste (df[k,2],"col.:",df[k,12],df[k,8]) #date project collector specimen number
+
+          if (df[k,3] == "") l[j,i] <- paste (df[k,5],",",df[k,8])
+
+          if (df[k, 12] == "") l[j+3,i] <- paste(df[k,2],",",df[k,11],",","col.: B. Brosi")
+
+          if (df[k,6] == "") l[j+1,i] <- ("ENTER GPS DATA")
+
+          if (k < length(df[,1])) k<-k+1
+
+        }
+      },
+
+write.table(l, file = "gradients_bottom_labels.csv", sep = ",", col.names = F, row.names = F, append=FALSE)
+    )
+  }
+
+top.labels <- function(df){
+  rbind(
+    cl <- 11,
+    l<-matrix(nrow=(ceiling(length(df[,1])/cl))*2,ncol=cl),
+    k<-1,
+    for (j in ((c(1:(length(l[,1])/2))*2)-1)){
+      for (i in c(1:cl)) {
+        l[j,i] <- paste ("RMBL",df[k,1],"#",df[k,8]) #RMBL Year #specimen number
+        l[j+1,i] <- paste ("") #blank row for formatting
+
+        if ( df[k,8] == "") l[j,i] <- paste ("RMBL",df[k,1])
+
+        if (k < length(df[,1])) k<-k+1
+
+        }
+      },
+
+write.table(l, file = "gradients_top_labels.csv", sep = ",", col.names = F, row.names = F, append=FALSE)
+    )
+  }
+```
+
+## Load Data
+
+Requires networks data in .csv form.
+To have labels in order, you must sort the ID file in ascending order.
+
+```{r data}
+# Load data, select relevent columns, put all together
+gradients <- read.csv("../../Data/gradients_network.csv", stringsAsFactors = F)
+qnest <- read.csv("../../../Qnest/Data/qnest_network.csv", stringsAsFactors = F)
+siteinfo <- read.csv("../../Data/Metadata/gradients_siteinfo.csv", stringsAsFactors = F)
+
+gradients <- gradients %>% dplyr::select(date, site, who, transect, segment, vial_number, specimen_number, gross_ID, insect_family, fine_ID, plant)
+qnest <- qnest %>% dplyr::select(date, site, who, transect, segment, vial_number, specimen_number, gross_ID, insect_family, fine_ID, plant)
+siteinfo <- siteinfo %>% dplyr::select(site, latitude, longitude, elevation)
+df <- rbind(gradients, qnest)
+
+# Remove observations so only data where specimen was collected gets a label
+df <- df[!is.na(df$specimen_number),]
+```
+
+## Clean Data
+```{r clean}
+# Select labels you want to print and sort by ascending specimen number
+df <- df[df$specimen_number > 70000,]
+df$year <- 2021
+df <- df %>% arrange(specimen_number)
+
+# Add columns for collector and geography in the correct format
+col <- data.frame(
+  who = sort(unique(df$who)), 
+  collector = c("A. Baker", 
+                "A. Schiffer", 
+                "B. Brosi", 
+                "D. Gascon", 
+                "K. Arrowsmith", 
+                "K. Woytek", 
+                "M. Chandar", 
+                "M. Strait", 
+                "R. Alarcon", 
+                "S. Cooley", 
+                "S. Dewey", 
+                "T. Lamperty")
+  )
+
+# Add necessary columns to df
+df <- left_join(df, col, by = "who")
+df <- left_join(df, siteinfo, by = "site")
+
+df$species <- ""
+
+# Add S to segment numbers
+df$segment <- paste("S", df$segment, sep = "")
+
+# Format plant names to be G. species instead of Genus species
+df2 <- df %>% separate(plant, into = c("genus", "species"), sep = " ")
+df$plant <- paste(substr(df2$genus, 1, 1), ".", " ", df2$species, sep = "")
+
+# To print just certain labels
+df <- df %>%
+  filter(insect_family == "Syrphidae") %>%
+  arrange(fine_ID)
+
+# Remove unnecessary columns
+df[ ,c("who", "round", "vial_number", "gross_ID", "insect_family", "notes", "fine_ID", "pollen", "date2")] <- list(NULL)
+
+# Add row at top of df for a sample label
+newrow <- data.frame(date = "0/00/00", site = "Site", transect = "XX", segment = "SX", specimen_number = 0, plant = "Plant", collector = "A. Collector", latitude = 0, longitude = 0, elevation = 0, year = 0, species = NA)
+df <- rbind(newrow, df)
+
+# Reorder columns
+df <- df %>%
+  dplyr::select("year", "date", "transect", "segment", "site", "latitude", "longitude", "specimen_number", "species", "elevation", "plant", "collector")
+```
+
+
+## Generate Labels
+
+```{r labels}
+bottom.labels(df)
+top.labels(df)
+```
