@@ -1,0 +1,42 @@
+---
+title: "Example of labelr"
+output: html_notebook
+---
+
+Here's an example of how the labeler works. You'll need to import your specimen list as well as relevant metadata about those data.
+
+```{r}
+library(here)
+library(tidyverse)
+```
+
+
+# Import data
+
+Requires specimen data in .csv form.
+CNM / MS fix *To have labels in order, you must sort the ID file in ascending order.*
+
+```{r import data}
+data.path= here("sample datasets")
+
+# import some specimen data in
+specimendat <- read.csv(paste(data.path,"biofuels.csv", sep = "/"), stringsAsFactors = F)
+
+
+# if metadata lives in separate file
+siteinfo=read.csv(paste(data.path,"gradients_siteinfo.csv", sep = "/"), stringsAsFactors = F)
+
+```
+
+# test `bottom.labels`
+
+```{r bottom label function}
+source("bottom.labels.R")
+```
+
+```{r}
+bottomlabs= bottom.labels(specimendat)
+```
+
+
+# test `top.labels`

@@ -67,7 +67,7 @@ write.table(l, file = "gradients_top_labels.csv", sep = ",", col.names = F, row.
 ## Load Data
 
 Requires networks data in .csv form.
-To have labels in order, you must sort the ID file in ascending order.
+CNM / MS fix *To have labels in order, you must sort the ID file in ascending order.*
 
 ```{r data}
 # Load data, select relevent columns, put all together
