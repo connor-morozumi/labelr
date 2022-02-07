@@ -11,7 +11,7 @@ locality.label <- function(df, spec.num, country, state, county, geo.general, ge
       for (i in c(1:cl)) {
         
         l[j,i] <- paste (df[k,country],df[k,state],df[k,county]) ## Country, state (territory, province), and county (township) 
-        l[j+1,i] <-paste(df[k,geo.general])
+        l[j+1,i] <-paste(df[k,geo.general]) # general geographic info
         l[j+2,i] <-  paste (df[k,geo.spec]) #coordinates or other specific geographic location
         l[j+3,i] <- paste (df[k,date], "col.",df[k,col]) #date project collector specimen number
         
@@ -20,7 +20,6 @@ locality.label <- function(df, spec.num, country, state, county, geo.general, ge
         
       }
     },
-    return(l),
-    write.table(l, file = "locality_label.csv", sep = ",", col.names = F, row.names = F, append=FALSE)
+    return(l)
   )
 }

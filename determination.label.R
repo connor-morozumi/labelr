@@ -14,7 +14,6 @@ determination.label <- function(df, id, authority, det, year.det){
         
       }
     },
-    return(l),
-    write.table(l, file = "determination_labels.csv", sep = ",", col.names = F, row.names = F, append=FALSE)
+    return(l)
   )
 }

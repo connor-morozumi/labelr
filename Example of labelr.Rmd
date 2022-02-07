@@ -14,14 +14,14 @@ library(tidyverse)
 # Import data
 
 Requires specimen data in .csv form.
-CNM / MS fix *To have labels in order, you must sort the ID file in ascending order.*
+
 
 ```{r import data}
 data.path= here("sample datasets")
 
-# import some specimen data in
-specimendat <- read.csv(paste(data.path,"biofuels.csv", sep = "/"), stringsAsFactors = F)
+biofuels_det=read.csv(paste(data.path,"determination.df.csv", sep = "/"), stringsAsFactors = F)
 
+# import some specimen data in
 gradients= read.csv(paste(data.path,"clean-networks.csv", sep = "/"), stringsAsFactors = F)
 
 # if metadata lives in separate file
@@ -29,7 +29,7 @@ siteinfo=read.csv(paste(data.path,"gradients_siteinfo.csv", sep = "/"), stringsA
 
 ```
 
-# test `locality.label`
+# create locality labels using: `locality.label`
 
 ```{r locality label function}
 source("locality.label.R")
@@ -52,16 +52,27 @@ gradients.plus.metadata$lat.long=paste (gradients.plus.metadata$latitude, "N," ,
 
 
 Ok now apply the locality label function
+
+This locality label function needs these inputs:
+- df
+- spec.num: column that identifies specimens uniquely,
+- country
+- state / territory / province
+- county
+- general geographic location
+- specific geographic location
+- date
+- collector
+
 ```{r}
-locality.label(gradients.plus.metadata, "specimen_number", "country", "state", "county", "generalgeo", "lat.long", "date", "who")
+loc.lab=locality.label(gradients.plus.metadata, "specimen_number", "country", "state", "county", "generalgeo", "lat.long", "date", "who")
+
+write.table(loc.lab, file = "locality_label.csv", sep = ",", col.names = F, row.names = F, append=FALSE)
+
 ```
 
 
-# test `determination.label`
-
-```{r}
-biofuels_det=read.csv(paste(data.path,"determination.df.csv", sep = "/"), stringsAsFactors = F)
-```
+# create determination labels using: `determination.label`
 
 ```{r determination label function}
 source("determination.label.R")
@@ -76,6 +87,8 @@ This determination label function needs these inputs:
 + You can name these columns anything in your df (in the example given they are `genus.species`, `auth` and so on)
 
 ```{r}
-determination.label(biofuels_det, "genus.species", "auth", "ident", "Year")
+det.labs= determination.label(biofuels_det, "genus.species", "auth", "ident", "Year")
+
+write.table(det.labs, file = "determination_labels.csv", sep = ",", col.names = F, row.names = F, append=FALSE)
 ```
 
