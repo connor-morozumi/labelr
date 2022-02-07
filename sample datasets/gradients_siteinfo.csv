@@ -1,21 +1,21 @@
-﻿site,site.abbrev,latitude,longitude,elevation
-403 Bench,403,38.982,-107.013,3153
-Avery Picnic,AP,38.98,-106.999,2973
-Brush Creek,BC,38.896,-106.892,2796
-Brush Creek Hill,BCH,38.895,-106.892,2784
-Brush Creek Trail,BCT,38.865,-106.912,2722
-Emerald Lake Hill,ELH,39.006,-107.031,3158
-Emerald Lake Shore,ELS,39.008,-107.04,3191
-Gothic Town,GT,38.948,-106.991,2874
-Kebler Pass,KP,38.85,-107.101,3048
-Lake Irwin,LI,38.864,-107.106,3052
-Meridian,MR,38.933,-107.01,2945
-Ohio Pass High,OPH,38.836,-107.091,3082
-Ohio Pass Low,OPL,38.805,-107.085,2766
-Pfeiler,PF,38.955,-107.029,3110
-Rustlers Gulch,RG,38.99,-107.012,2985
-Stupid Falls,SF,38.945,-106.981,2853
-Wash 3C,W3C,38.937,-107.021,2990
-Coal Creek,CC,38.857,-107.059,2914
-Virginia Basin,VB,38.977,-106.977,3430
-Bellview Bench,BBB,39,-107.021,3055
+﻿site,site.abbrev,latitude,longitude,elevation,country,county,state,generalgeo
+403 Bench,403,38.982,-107.013,3153,USA,Gunnison,CO,1 mile no RMBL
+Avery Picnic,AP,38.98,-106.999,2973,USA,Gunnison,CO,1 mile no RMBL
+Brush Creek,BC,38.896,-106.892,2796,USA,Gunnison,CO,3 mile so RMBL
+Brush Creek Hill,BCH,38.895,-106.892,2784,USA,Gunnison,CO,3 mile so RMBL
+Brush Creek Trail,BCT,38.865,-106.912,2722,USA,Gunnison,CO,3 mile so RMBL
+Emerald Lake Hill,ELH,39.006,-107.031,3158,USA,Gunnison,CO,2 mile no RMBL
+Emerald Lake Shore,ELS,39.008,-107.04,3191,USA,Gunnison,CO,2 mile no RMBL
+Gothic Town,GT,38.948,-106.991,2874,USA,Gunnison,CO,0.5 mile so RMBL
+Kebler Pass,KP,38.85,-107.101,3048,USA,Gunnison,CO,5.5 miles w Crested Butte
+Lake Irwin,LI,38.864,-107.106,3052,USA,Gunnison,CO,5 miles w Crested Butte
+Meridian,MR,38.933,-107.01,2945,USA,Gunnison,CO,"Washington gulch, 2 miles from paved road"
+Ohio Pass High,OPH,38.836,-107.091,3082,USA,Gunnison,CO,2 miles w Crested Butte
+Ohio Pass Low,OPL,38.805,-107.085,2766,USA,Gunnison,CO,2 miles w Crested Butte
+Pfeiler,PF,38.955,-107.029,3110,USA,Gunnison,CO,"Washington gulch, 3 miles from paved road"
+Rustlers Gulch,RG,38.99,-107.012,2985,USA,Gunnison,CO,1.5 mile no RMBL
+Stupid Falls,SF,38.945,-106.981,2853,USA,Gunnison,CO,1.5 mile so RMBL
+Wash 3C,W3C,38.937,-107.021,2990,USA,Gunnison,CO,"Washington gulch, 2.5 miles from paved road"
+Coal Creek,CC,38.857,-107.059,2914,USA,Gunnison,CO,?
+Virginia Basin,VB,38.977,-106.977,3430,USA,Gunnison,CO,1 mi NE rmbl
+Bellview Bench,BBB,39,-107.021,3055,USA,Gunnison,CO,2.8 miles no RMBL

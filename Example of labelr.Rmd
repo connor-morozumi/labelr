@@ -22,21 +22,60 @@ data.path= here("sample datasets")
 # import some specimen data in
 specimendat <- read.csv(paste(data.path,"biofuels.csv", sep = "/"), stringsAsFactors = F)
 
+gradients= read.csv(paste(data.path,"clean-networks.csv", sep = "/"), stringsAsFactors = F)
 
 # if metadata lives in separate file
 siteinfo=read.csv(paste(data.path,"gradients_siteinfo.csv", sep = "/"), stringsAsFactors = F)
 
 ```
 
-# test `bottom.labels`
+# test `locality.label`
 
-```{r bottom label function}
-source("bottom.labels.R")
+```{r locality label function}
+source("locality.label.R")
 ```
+
+Maybe will need to concantentate some dfs together (can do this outside of R or within as in this example)
 
 ```{r}
-bottomlabs= bottom.labels(specimendat)
+# can filter and select df as needed, eg. for our dataset we only want the subset of this df that has specimen numbers
+gradients= gradients %>% 
+  filter(!is.na(specimen_number))
+
+# join site info to the specimen data
+gradients.plus.metadata= left_join(gradients, siteinfo)
+
+# paste lat and long together
+gradients.plus.metadata$lat.long=paste (gradients.plus.metadata$latitude, "N," , gradients.plus.metadata$longitude,'W')
+
 ```
 
 
-# test `top.labels`
+Ok now apply the locality label function
+```{r}
+locality.label(gradients.plus.metadata, "specimen_number", "country", "state", "county", "generalgeo", "lat.long", "date", "who")
+```
+
+
+# test `determination.label`
+
+```{r}
+biofuels_det=read.csv(paste(data.path,"determination.df.csv", sep = "/"), stringsAsFactors = F)
+```
+
+```{r determination label function}
+source("determination.label.R")
+```
+
+This determination label function needs these inputs:
+- df
+- id: who identified,
+- authority: taxonomic authority for that species
+- year identified
+
++ You can name these columns anything in your df (in the example given they are `genus.species`, `auth` and so on)
+
+```{r}
+determination.label(biofuels_det, "genus.species", "auth", "ident", "Year")
+```
+

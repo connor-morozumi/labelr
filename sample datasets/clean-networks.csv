@@ -1,0 +1,77 @@
+date,site,who,transect,segment,round,vial_number,specimen_number,gross_ID,plant,insect_order,insect_family,insect_subfamily,insect_genus,insect_species,fine_ID,pollen,notes,year
+6/4/21,Brush Creek Hill,MC,T1,3,1,MC1,70037,Small black solitary bee,Ligusticum porteri,Hymenoptera,Halictidae,Halictinae,Lasioglossum,,Lasioglossum,,double check species,2021
+6/4/21,Brush Creek Hill,KA,T3,4,2,KA1,70039,Small metallic solitary bee,Boechera stricta,Hymenoptera,Megachilidae,Megachilinae,Osmia,,Osmia,,Osmia,2021
+6/4/21,Brush Creek Hill,MC,T1,1,3,MC3,70040,Small black solitary bee,Delphinium nuttallianum,Hymenoptera,Halictidae,Halictinae,Lasioglossum,,Lasioglossum,,,2021
+6/4/21,Brush Creek Hill,MC,T1,1,3,MC4,70041,Beetles,Taraxacum officinale,Coleoptera,Mordellidae,Mordellinae,Mordella,,Mordella,,,2021
+6/9/21,Stupid Falls,TL,T2,1,1,TL1,70075,Other fly,Taraxacum officinale,Diptera,Muscidae,Phaoniinae,Phaonia,,Phaonia,,,2021
+6/9/21,Stupid Falls,MC,T2,5,1,MC1,70076,Other fly,Taraxacum officinale,Diptera,Hybotidae,,,,Hybotidae,,,2021
+6/9/21,Stupid Falls,BB,T2,4,2,BB2,70082,Small black solitary bee,Mertensia fusiformis,Hymenoptera,Halictidae,Halictinae,Lasioglossum,,Lasioglossum,,,2021
+6/9/21,Stupid Falls,BB,T2,4,2,BB3,70083,Small black solitary bee,Mertensia fusiformis,Hymenoptera,Halictidae,Halictinae,Lasioglossum,,Lasioglossum,,,2021
+6/9/21,Stupid Falls,TL,T1,1,2,TL2,70084,Small black solitary bee,Boechera stricta,Hymenoptera,Halictidae,Halictinae,Lasioglossum,,Lasioglossum,,,2021
+6/9/21,Stupid Falls,TL,T2,2,2,TL3,70085,Small black solitary bee,Taraxacum officinale,Hymenoptera,Halictidae,Halictinae,Lasioglossum,,Lasioglossum,,,2021
+6/9/21,Stupid Falls,TL,T1,2,2,TL4,70086,Small black solitary bee,Taraxacum officinale,Hymenoptera,Halictidae,Halictinae,Lasioglossum,,Lasioglossum,,,2021
+6/9/21,Stupid Falls,TL,T1,2,2,TL5,70087,Small black solitary bee,Taraxacum officinale,Hymenoptera,Halictidae,Halictinae,Lasioglossum,,Lasioglossum,,,2021
+6/9/21,Stupid Falls,TL,T1,3,2,TL6,70088,Small black solitary bee,Mertensia fusiformis,Hymenoptera,Halictidae,Halictinae,Lasioglossum,,Lasioglossum,,,2021
+6/9/21,Stupid Falls,TL,T3,1,3,TL7,70089,Other fly,Taraxacum officinale,Diptera,Syrphidae,Eristalinae,Hiatomyia,,Hiatomyia,,,2021
+6/9/21,Stupid Falls,TL,T1,4,3,TL8,70090,Small black solitary bee,Taraxacum officinale,Hymenoptera,Halictidae,Halictinae,Lasioglossum,,Lasioglossum,,,2021
+6/9/21,Stupid Falls,TL,T2,1,3,TL9,70091,Small black solitary bee,Valeriana occidentalis,Hymenoptera,Andrenidae,Andreninae,Andrena,,Andrena,,,2021
+6/9/21,Stupid Falls,TL,T2,1,3,TL10,70092,Other fly,Taraxacum officinale,Diptera,Muscidae,Phaoniinae,Phaonia,,Phaonia,,,2021
+6/9/21,Stupid Falls,TL,T2,1,3,TL11,70093,Hemipteran,Valeriana occidentalis,Hemiptera,Miridae,,,,,,,2021
+6/9/21,Stupid Falls,TL,T3,3,3,,NA,Syrphidae,Valeriana occidentalis,Diptera,Syrphidae,,,,,,,2021
+6/9/21,Stupid Falls,MC,T2,2,3,MC4,70094,Other fly,Valeriana occidentalis,Diptera,Muscidae,,,,Drymeia,,,2021
+6/9/21,Stupid Falls,MC,T1,3,3,MC5,70095,Other fly,Taraxacum officinale,Diptera,Syrphidae,Syrphinae,Platycheirus,,Platycheirus,,,2021
+6/9/21,Stupid Falls,MC,T1,3,3,MC6,70096,Small black solitary bee,Mertensia fusiformis,Hymenoptera,Halictidae,Halictinae,Lasioglossum,,Lasioglossum,,,2021
+6/9/21,Stupid Falls,MC,T2,2,3,,NA,Other fly,Valeriana occidentalis,Diptera,,,,,,,,2021
+6/9/21,Stupid Falls,MDS,T2,4,3,MDS3,70097,Small black solitary bee,Mertensia fusiformis,Hymenoptera,Halictidae,Halictinae,Lasioglossum,,Lasioglossum,,,2021
+6/9/21,Stupid Falls,MDS,T1,5,3,,NA,Bombus unknown,Taraxacum officinale,Hymenoptera,Apidae,Apinae,Bombus,,,,little bit of orange,2021
+6/9/21,Kebler Pass,AS,T2,3,1,AS1,70098,Small black solitary bee,Hydrophyllum capitatum,Hymenoptera,Halictidae,Halictinae,Lasioglossum,,Lasioglossum,,,2021
+6/9/21,Kebler Pass,KA,T1,3,1,KA1,70099,Small black solitary bee,Hydrophyllum capitatum,Hymenoptera,Halictidae,Halictinae,Lasioglossum,,Lasioglossum,,,2021
+6/9/21,Kebler Pass,KA,T2,4,1,KA2,70100,Small black solitary bee,Hydrophyllum capitatum,Hymenoptera,Halictidae,Halictinae,Lasioglossum,,Lasioglossum,,,2021
+6/9/21,Kebler Pass,KA,T2,4,1,KA3,70101,Small black solitary bee,Hydrophyllum capitatum,Hymenoptera,Halictidae,Halictinae,Lasioglossum,,Lasioglossum,,,2021
+6/9/21,Kebler Pass,KA,T1,3,1,,NA,Small black solitary bee,Hydrophyllum capitatum,Hymenoptera,,,,,,,,2021
+6/9/21,Kebler Pass,KA,T1,3,2,KA4,70102,Small black solitary bee,Hydrophyllum capitatum,Hymenoptera,Halictidae,Halictinae,Lasioglossum,,Lasioglossum,,,2021
+6/9/21,Kebler Pass,KA,T1,3,2,KA5,70103,Big megachile,Hydrophyllum capitatum,Hymenoptera,Megachilidae,Megachilinae,Anthidium,,Anthidium,,,2021
+6/9/21,Kebler Pass,KA,T1,4,2,,NA,Small black solitary bee,Hydrophyllum capitatum,Hymenoptera,,,,,,,,2021
+6/9/21,Kebler Pass,KA,T1,4,2,,NA,Small metallic solitary bee,Mertensia fusiformis,Hymenoptera,Megachilidae,Megachilinae,Osmia,,Osmia,,Osmia,2021
+6/9/21,Kebler Pass,AS,T3,5,2,AS2,70104,Other fly,Mertensia fusiformis,Diptera,Tephritidae,,,,Tephritidae,,,2021
+6/9/21,Kebler Pass,AS,T1,2,3,AS3,70105,Small black solitary bee,Hydrophyllum capitatum,Hymenoptera,Halictidae,Halictinae,Lasioglossum,,Lasioglossum,,,2021
+6/9/21,Kebler Pass,AS,T1,3,3,,NA,Other fly,Hydrophyllum capitatum,Diptera,,,,,,,,2021
+6/9/21,Kebler Pass,KA,T3,5,3,,NA,Small metallic solitary bee,Viola praemorsa,Hymenoptera,Megachilidae,Megachilinae,Osmia,,Osmia,,Osmia - caught and released,2021
+6/10/21,Brush Creek Hill,AS,T1,3,1,,NA,Other fly,Ligusticum porteri,Diptera,,,,,,,,2021
+6/10/21,Brush Creek Hill,MC,T1,3,2,MC1,70112,Small black solitary bee,Ligusticum porteri,Hymenoptera,Andrenidae,Andreninae,Andrena,,Andrena,,,2021
+6/10/21,Brush Creek Hill,AS,T1,1,3,,NA,Big solitary bee (non-megachile),Lupinus sp.,Hymenoptera,,,,,,,Andrena?,2021
+6/10/21,Brush Creek Hill,MC,T3,5,3,,NA,Big solitary bee (non-megachile),Lupinus sp.,Hymenoptera,,,,,,,Andrena?,2021
+6/10/21,Brush Creek Hill,MC,T1,3,3,MC2,70113,Small black solitary bee,Ligusticum porteri,Hymenoptera,Andrenidae,Andreninae,Andrena,,Andrena,,,2021
+6/14/21,Rustlers Gulch,MDS,T2,4,1,MDS1,70127,Small black solitary bee,Pseudocymopterus montanus,Hymenoptera,Halictidae,Halictinae,Lasioglossum,,Lasioglossum,,,2021
+6/14/21,Rustlers Gulch,MDS,T1,1,1,MDS2,70128,Small black solitary bee,Fragaria virginiana,Hymenoptera,Halictidae,Halictinae,Lasioglossum,,Lasioglossum,,,2021
+6/14/21,Rustlers Gulch,MDS,T2,2,1,MDS3,70129,Small black solitary bee,Boechera stricta,Hymenoptera,Halictidae,Halictinae,Lasioglossum,,Lasioglossum,,,2021
+6/14/21,Rustlers Gulch,MDS,T1,1,1,MDS4,70130,Small black solitary bee,Fragaria virginiana,Hymenoptera,Halictidae,Halictinae,Lasioglossum,,Lasioglossum,,,2021
+6/14/21,Rustlers Gulch,MDS,T2,1,1,,NA,Small black solitary bee,Fragaria virginiana,Hymenoptera,,,,,,,,2021
+6/14/21,Rustlers Gulch,AS,T3,3,1,AS1,70131,Hemipteran,Pseudocymopterus montanus,Hemiptera,Thyreocoridae,,Corimelaena,,Corimelaena,,,2021
+6/14/21,Rustlers Gulch,AS,T3,3,1,AS2,70132,Small black solitary bee,Pseudocymopterus montanus,Hymenoptera,Halictidae,Halictinae,Lasioglossum,,Lasioglossum,,,2021
+6/14/21,Rustlers Gulch,AS,T1,2,1,AS3,70133,Small black solitary bee,Fragaria virginiana,Hymenoptera,Halictidae,Halictinae,Lasioglossum,,Lasioglossum,,,2021
+6/14/21,Rustlers Gulch,AS,T3,3,1,,NA,Small black solitary bee,Pseudocymopterus montanus,Hymenoptera,,,,,,,,2021
+6/14/21,Rustlers Gulch,AS,T1,2,1,,NA,Small black solitary bee,Fragaria virginiana,Hymenoptera,,,,,,,,2021
+6/14/21,Rustlers Gulch,AS,T1,2,1,,NA,Small black solitary bee,Fragaria virginiana,Hymenoptera,,,,,,,,2021
+6/14/21,Rustlers Gulch,MC,T2,3,1,MC1,70134,Small black solitary bee,Fragaria virginiana,Hymenoptera,Halictidae,Halictinae,Lasioglossum,,Lasioglossum,,,2021
+6/14/21,Rustlers Gulch,MC,T3,5,1,MC2,70135,Small black solitary bee,Pseudocymopterus montanus,Hymenoptera,Halictidae,Halictinae,Lasioglossum,,Lasioglossum,,,2021
+6/14/21,Rustlers Gulch,MC,T3,5,1,MC3,70136,Small black solitary bee,Pseudocymopterus montanus,Hymenoptera,Halictidae,Halictinae,Lasioglossum,,Lasioglossum,,,2021
+6/14/21,Rustlers Gulch,MC,T3,5,1,MC4,70137,Other fly,Pseudocymopterus montanus,Diptera,Bombyliidae,Ecliminae,Lepidophora,,Lepidophora,,,2021
+6/14/21,Rustlers Gulch,MC,T3,5,1,,NA,Small black solitary bee,Pseudocymopterus montanus,Hymenoptera,,,,,,,,2021
+6/14/21,Rustlers Gulch,MC,T3,4,1,,NA,Small black solitary bee,Pseudocymopterus montanus,Hymenoptera,,,,,,,,2021
+6/14/21,Rustlers Gulch,MC,T3,4,1,,NA,Small black solitary bee,Pseudocymopterus montanus,Hymenoptera,,,,,,,,2021
+6/14/21,Rustlers Gulch,MDS,T2,1,2,MDS5,70138,Small black solitary bee,Fragaria virginiana,Hymenoptera,Halictidae,Halictinae,Lasioglossum,,Lasioglossum,,,2021
+6/14/21,Rustlers Gulch,MDS,T3,1,2,MDS6,70139,Hemipteran,Pseudocymopterus montanus,Hemiptera,Thyreocoridae,,Corimelaena,,Corimelaena,,,2021
+6/14/21,Rustlers Gulch,MDS,T3,1,2,MDS7,70140,Small black solitary bee,Fragaria virginiana,Hymenoptera,Halictidae,Halictinae,Lasioglossum,,Lasioglossum,,,2021
+6/14/21,Rustlers Gulch,MDS,T1,2,2,MDS8,70141,Small black solitary bee,Fragaria virginiana,Hymenoptera,Halictidae,Halictinae,Halictus,,Halictus,,,2021
+6/14/21,Rustlers Gulch,MDS,T1,2,2,MDS9,70142,Small black solitary bee,Fragaria virginiana,Hymenoptera,Halictidae,Halictinae,Lasioglossum,,Lasioglossum,,,2021
+6/14/21,Rustlers Gulch,MDS,T1,3,2,MDS10,70143,Small black solitary bee,Fragaria virginiana,Hymenoptera,Halictidae,Halictinae,Halictus,,Halictus,,,2021
+6/14/21,Rustlers Gulch,MDS,T1,2,2,,NA,Small black solitary bee,Fragaria virginiana,Hymenoptera,,,,,,,,2021
+6/14/21,Rustlers Gulch,MC,T2,2,2,MC5,70144,Small black solitary bee,Fragaria virginiana,Hymenoptera,Halictidae,Halictinae,Lasioglossum,,Lasioglossum,,,2021
+6/14/21,Rustlers Gulch,MC,T3,4,2,MC6,70145,Small black solitary bee,Fragaria virginiana,Hymenoptera,Halictidae,Halictinae,Lasioglossum,,Lasioglossum,,larger bee in vial,2021
+6/14/21,Rustlers Gulch,MC,T3,3,2,MC7,70146,Small black solitary bee,Pseudocymopterus montanus,Hymenoptera,Halictidae,Halictinae,Lasioglossum,,Lasioglossum,,,2021
+6/14/21,Rustlers Gulch,MC,T2,2,2,,NA,Small black solitary bee,Fragaria virginiana,Hymenoptera,,,,,,,,2021
+6/14/21,Rustlers Gulch,MC,T2,2,2,,NA,Small black solitary bee,Pseudocymopterus montanus,Hymenoptera,,,,,,,,2021
+6/14/21,Rustlers Gulch,AS,T3,5,2,AS4,70147,Syrphidae,Pseudocymopterus montanus,Diptera,Syrphidae,Eristalinae,Cheilosia,,Cheilosia,,,2021
+6/14/21,Rustlers Gulch,AS,T3,5,2,AS5,70148,Small black solitary bee,Taraxacum officinale,Hymenoptera,Halictidae,Halictinae,Halictus,,Halictus,,,2021
+6/14/21,Rustlers Gulch,AS,T2,4,2,AS6,70149,Syrphidae,Pseudocymopterus montanus,Diptera,Syrphidae,Eristalinae,Cheilosia,,Cheilosia,,,2021
